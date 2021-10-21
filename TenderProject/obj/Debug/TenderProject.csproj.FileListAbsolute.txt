@@ -1,0 +1,2 @@
+/Users/halimekaya/Projects/TenderProject/TenderProject/obj/Debug/TenderProject.csproj.AssemblyReference.cache
+/Users/halimekaya/Projects/TenderProject/TenderProject/obj/Debug/TenderProject.csproj.CoreCompileInputs.cache
