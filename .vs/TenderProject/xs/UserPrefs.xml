@@ -1,11 +1,20 @@
-﻿<Properties StartupConfiguration="{BB548DDE-9256-448E-929E-3A7E2DBED1B3}|Default">
+﻿<Properties StartupConfiguration="{1A7F1E57-DEDE-435E-A4F8-D76BACA5DB59}|Default">
   <MonoDevelop.Ide.ItemProperties.WebAPI PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebAPI/Startup.cs">
+    <Files>
+      <File FileName="WebAPI/Controllers/HomeController.cs" Line="27" Column="10" />
+      <File FileName="WebAPI/Controllers/CategoriesController.cs" Line="18" Column="15" />
+      <File FileName="WebAPI/appsettings.json" Line="1" Column="1" />
+      <File FileName="WebAPI/Startup.cs" Line="32" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TenderProject" expanded="True">
-            <Node name="Core" selected="True" />
+            <Node name="WebAPI" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -13,6 +22,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.ItemProperties.ConsoleUI PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

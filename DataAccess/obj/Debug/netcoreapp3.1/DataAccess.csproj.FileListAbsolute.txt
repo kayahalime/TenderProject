@@ -10,9 +10,9 @@
 /Users/halimekaya/Projects/TenderProject/DataAccess/obj/Debug/netcoreapp3.1/DataAccess.pdb
 /Users/halimekaya/Projects/TenderProject/DataAccess/bin/Debug/netcoreapp3.1/Entities.dll
 /Users/halimekaya/Projects/TenderProject/DataAccess/bin/Debug/netcoreapp3.1/Entities.pdb
-/Users/halimekaya/Projects/TenderProject/DataAccess/obj/Debug/netcoreapp3.1/DataAccess.csproj.CopyComplete
 /Users/halimekaya/Projects/TenderProject/DataAccess/bin/Debug/netcoreapp3.1/DataAccess.runtimeconfig.json
 /Users/halimekaya/Projects/TenderProject/DataAccess/bin/Debug/netcoreapp3.1/DataAccess.runtimeconfig.dev.json
 /Users/halimekaya/Projects/TenderProject/DataAccess/bin/Debug/netcoreapp3.1/Core.dll
 /Users/halimekaya/Projects/TenderProject/DataAccess/bin/Debug/netcoreapp3.1/Core.pdb
 /Users/halimekaya/Projects/TenderProject/DataAccess/obj/Debug/netcoreapp3.1/DataAccess.genruntimeconfig.cache
+/Users/halimekaya/Projects/TenderProject/DataAccess/obj/Debug/netcoreapp3.1/DataAccess.csproj.CopyComplete

@@ -12,11 +12,15 @@
     <None Remove="Microsoft.EntityFrameworkCore.Design" />
     <None Remove="Microsoft.EntityFrameworkCore.Tools" />
     <None Remove="Npgsql.EntityFrameworkCore.PostgreSQL" />
+    <None Remove="Concrete\EntityFramework\Configurations\" />
+    <None Remove="Concrete\EntityFramework\Migrations\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstract\" />
     <Folder Include="Concrete\" />
     <Folder Include="Concrete\EntityFramework\" />
+    <Folder Include="Concrete\EntityFramework\Configurations\" />
+    <Folder Include="Concrete\EntityFramework\Migrations\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entities\Entities.csproj" />

@@ -9,7 +9,7 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            Tender tender = new Tender {
+           /* Tender tender = new Tender {
                 TenderId = 1, Active =true, AdminId =12, Category="ev" , Price=100.000
             };
             Console.WriteLine("Tender Test");
@@ -40,7 +40,7 @@ namespace ConsoleUI
             };
             Console.WriteLine("Bid Test");
             Console.WriteLine("Bid id: " + bid.BidId + " Tender id: " + bid.TenderId + " Client Id:" + bid.ClientId);
-
+           */
            
         }
     }

@@ -12,6 +12,6 @@
 /Users/halimekaya/Projects/TenderProject/Business/bin/Debug/netcoreapp3.1/Entities.dll
 /Users/halimekaya/Projects/TenderProject/Business/bin/Debug/netcoreapp3.1/DataAccess.pdb
 /Users/halimekaya/Projects/TenderProject/Business/bin/Debug/netcoreapp3.1/Entities.pdb
-/Users/halimekaya/Projects/TenderProject/Business/obj/Debug/netcoreapp3.1/Business.csproj.CopyComplete
 /Users/halimekaya/Projects/TenderProject/Business/bin/Debug/netcoreapp3.1/Core.dll
 /Users/halimekaya/Projects/TenderProject/Business/bin/Debug/netcoreapp3.1/Core.pdb
+/Users/halimekaya/Projects/TenderProject/Business/obj/Debug/netcoreapp3.1/Business.csproj.CopyComplete
