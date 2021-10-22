@@ -77,16 +77,16 @@
     ]
   },
   "packageFolders": {
-    "/Users/halimekaya/Projects/TenderProject/WebAPI/obj/.store/.stage/xrabpea0.34x": {}
+    "/Users/halimekaya/Projects/TenderProject/WebAPI/obj/.store/.stage/lbabwy25.dgk": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/var/folders/sm/n23h10x16ld6l2h4crsn25y40000gn/T/22itw0u0.3x0/restore.csproj",
+      "projectUniqueName": "/var/folders/sm/n23h10x16ld6l2h4crsn25y40000gn/T/lm4ff0mu.ccr/restore.csproj",
       "projectName": "restore",
-      "projectPath": "/var/folders/sm/n23h10x16ld6l2h4crsn25y40000gn/T/22itw0u0.3x0/restore.csproj",
-      "packagesPath": "/Users/halimekaya/Projects/TenderProject/WebAPI/obj/.store/.stage/xrabpea0.34x",
-      "outputPath": "/Users/halimekaya/Projects/TenderProject/WebAPI/obj/.store/.stage/xrabpea0.34x/",
+      "projectPath": "/var/folders/sm/n23h10x16ld6l2h4crsn25y40000gn/T/lm4ff0mu.ccr/restore.csproj",
+      "packagesPath": "/Users/halimekaya/Projects/TenderProject/WebAPI/obj/.store/.stage/lbabwy25.dgk",
+      "outputPath": "/Users/halimekaya/Projects/TenderProject/WebAPI/obj/.store/.stage/lbabwy25.dgk/",
       "projectStyle": "DotnetToolReference",
       "configFilePaths": [
         "/Users/halimekaya/.nuget/NuGet/NuGet.Config"

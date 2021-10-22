@@ -1,16 +1,18 @@
 {
+  "$schema": "http://json.schemastore.org/launchsettings.json",
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:18738",
-      "sslPort": 44310
+      "applicationUrl": "http://localhost:20376",
+      "sslPort": 44319
     }
   },
   "profiles": {
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
+      "launchUrl": "weatherforecast",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -18,7 +20,8 @@
     "WebAPI": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:12696;http://localhost:25858",
+      "launchUrl": "weatherforecast",
+      "applicationUrl": "https://localhost:37281;http://localhost:53856",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

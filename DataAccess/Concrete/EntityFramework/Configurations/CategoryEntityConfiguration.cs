@@ -14,9 +14,7 @@ namespace DataAccess.Concrete.EntityFramework.Configurations
             builder.Property(c => c.CategoryId)
                 .ValueGeneratedOnAdd()
                 .UseIdentityColumn();
-            builder.HasIndex(c => new { c.TenderId });
-
-            builder.Property(c => c.TenderId).IsRequired();
+            
 
 
             builder.Property(c => c.CategoryName)

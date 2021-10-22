@@ -1,21 +1,10 @@
-﻿<Properties StartupConfiguration="{1A7F1E57-DEDE-435E-A4F8-D76BACA5DB59}|Default">
+﻿<Properties StartupConfiguration="{586A99AB-EFF6-474E-9D93-AB81BA362275}|Default">
   <MonoDevelop.Ide.ItemProperties.WebAPI PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebAPI/Startup.cs">
-    <Files>
-      <File FileName="WebAPI/Controllers/HomeController.cs" Line="27" Column="10" />
-      <File FileName="WebAPI/Controllers/CategoriesController.cs" Line="18" Column="15" />
-      <File FileName="WebAPI/appsettings.json" Line="1" Column="1" />
-      <File FileName="WebAPI/Startup.cs" Line="32" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="TenderProject" expanded="True">
-            <Node name="WebAPI" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Startup.cs" selected="True" />
-            </Node>
-          </Node>
+          <Node name="TenderProject" expanded="True" />
         </State>
       </Pad>
     </Pads>
