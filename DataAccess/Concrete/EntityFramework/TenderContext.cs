@@ -17,8 +17,8 @@ namespace DataAccess.Concrete.EntityFramework
         public DbSet<Image> images { get; set; }
         public DbSet<Tender> tenders { get; set; }
         public DbSet<User> users { get; set; }
-        public DbSet<OperationClaim> OperationClaims { get; set; }
-        public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
+        public DbSet<OperationClaim> operationClaims { get; set; }
+        public DbSet<UserOperationClaim> userOperationClaims { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

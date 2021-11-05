@@ -1,13 +1,13 @@
 /Users/halimekaya/Projects/TenderProject/Entities/bin/Debug/netcoreapp3.1/Entities.deps.json
 /Users/halimekaya/Projects/TenderProject/Entities/bin/Debug/netcoreapp3.1/Entities.dll
 /Users/halimekaya/Projects/TenderProject/Entities/bin/Debug/netcoreapp3.1/Entities.pdb
+/Users/halimekaya/Projects/TenderProject/Entities/bin/Debug/netcoreapp3.1/Core.dll
+/Users/halimekaya/Projects/TenderProject/Entities/bin/Debug/netcoreapp3.1/Core.pdb
 /Users/halimekaya/Projects/TenderProject/Entities/obj/Debug/netcoreapp3.1/Entities.csproj.AssemblyReference.cache
 /Users/halimekaya/Projects/TenderProject/Entities/obj/Debug/netcoreapp3.1/Entities.GeneratedMSBuildEditorConfig.editorconfig
 /Users/halimekaya/Projects/TenderProject/Entities/obj/Debug/netcoreapp3.1/Entities.AssemblyInfoInputs.cache
 /Users/halimekaya/Projects/TenderProject/Entities/obj/Debug/netcoreapp3.1/Entities.AssemblyInfo.cs
 /Users/halimekaya/Projects/TenderProject/Entities/obj/Debug/netcoreapp3.1/Entities.csproj.CoreCompileInputs.cache
+/Users/halimekaya/Projects/TenderProject/Entities/obj/Debug/netcoreapp3.1/Entities.csproj.CopyComplete
 /Users/halimekaya/Projects/TenderProject/Entities/obj/Debug/netcoreapp3.1/Entities.dll
 /Users/halimekaya/Projects/TenderProject/Entities/obj/Debug/netcoreapp3.1/Entities.pdb
-/Users/halimekaya/Projects/TenderProject/Entities/bin/Debug/netcoreapp3.1/Core.dll
-/Users/halimekaya/Projects/TenderProject/Entities/bin/Debug/netcoreapp3.1/Core.pdb
-/Users/halimekaya/Projects/TenderProject/Entities/obj/Debug/netcoreapp3.1/Entities.csproj.CopyComplete

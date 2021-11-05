@@ -1,6 +1,7 @@
-﻿using System;
+﻿using Core.Entities.Concrete;
+using System;
 using System.Collections.Generic;
-using Core.Entities.Concrete;
+using System.Text;
 
 namespace Core.Utilities.Security.JWT
 {

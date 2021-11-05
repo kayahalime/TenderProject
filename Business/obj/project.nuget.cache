@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dsKI6pb5OLs8A8mQ+dh/GTs6C2BK6zk1f++lbJ8mx5O0XK5b84m2dUfbcvDXHzGMiRJPg7z1RVLlmg/tbGcZmA==",
+  "dgSpecHash": "Q0cUwD9VMsyY4kt7fM2xs1ajFuFl4KXUHyoVd5++mQRmXp+nhdU9O1+BFgLqfhcdT9Ka+HKPyNMKmcHGMcAPIg==",
   "success": true,
   "projectFilePath": "/Users/halimekaya/Projects/TenderProject/Business/Business.csproj",
   "expectedPackageFiles": [
@@ -20,8 +20,8 @@
     "/Users/halimekaya/.nuget/packages/microsoft.entityframeworkcore.relational/5.0.10/microsoft.entityframeworkcore.relational.5.0.10.nupkg.sha512",
     "/Users/halimekaya/.nuget/packages/microsoft.extensions.caching.abstractions/5.0.0/microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "/Users/halimekaya/.nuget/packages/microsoft.extensions.caching.memory/5.0.0/microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
-    "/Users/halimekaya/.nuget/packages/microsoft.extensions.configuration/5.0.0/microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "/Users/halimekaya/.nuget/packages/microsoft.extensions.configuration.abstractions/5.0.0/microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "/Users/halimekaya/.nuget/packages/microsoft.extensions.configuration.binder/5.0.0/microsoft.extensions.configuration.binder.5.0.0.nupkg.sha512",
     "/Users/halimekaya/.nuget/packages/microsoft.extensions.dependencyinjection/5.0.2/microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
     "/Users/halimekaya/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0/microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "/Users/halimekaya/.nuget/packages/microsoft.extensions.logging/5.0.0/microsoft.extensions.logging.5.0.0.nupkg.sha512",

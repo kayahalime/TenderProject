@@ -16,6 +16,8 @@
     <None Remove="ValidationRules\" />
     <None Remove="ValidationRules\FluentValidation\" />
     <None Remove="FluentValidation" />
+    <None Remove="BusinessAspects\" />
+    <None Remove="BusinessAspects\Autofact\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstract\" />
@@ -25,6 +27,8 @@
     <Folder Include="DependencyResolvers\Autofac\" />
     <Folder Include="ValidationRules\" />
     <Folder Include="ValidationRules\FluentValidation\" />
+    <Folder Include="BusinessAspects\" />
+    <Folder Include="BusinessAspects\Autofact\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
