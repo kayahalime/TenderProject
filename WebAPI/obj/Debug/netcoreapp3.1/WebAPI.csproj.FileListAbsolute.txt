@@ -117,3 +117,8 @@
 /Users/halimekaya/Projects/TenderProject/WebAPI/obj/Debug/netcoreapp3.1/WebAPI.dll
 /Users/halimekaya/Projects/TenderProject/WebAPI/obj/Debug/netcoreapp3.1/WebAPI.pdb
 /Users/halimekaya/Projects/TenderProject/WebAPI/obj/Debug/netcoreapp3.1/WebAPI.genruntimeconfig.cache
+/Users/halimekaya/Projects/TenderProject/WebAPI/bin/Debug/netcoreapp3.1/Autofac.dll
+/Users/halimekaya/Projects/TenderProject/WebAPI/bin/Debug/netcoreapp3.1/Autofac.Extensions.DependencyInjection.dll
+/Users/halimekaya/Projects/TenderProject/WebAPI/bin/Debug/netcoreapp3.1/Autofac.Extras.DynamicProxy.dll
+/Users/halimekaya/Projects/TenderProject/WebAPI/bin/Debug/netcoreapp3.1/Castle.Core.dll
+/Users/halimekaya/Projects/TenderProject/WebAPI/bin/Debug/netcoreapp3.1/FluentValidation.dll

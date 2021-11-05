@@ -8,6 +8,7 @@ using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -30,8 +31,30 @@ namespace WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSingleton<ICategoryService, CategoryManager>();
-            services.AddSingleton<ICategoryDal, EfCategoryDal>();
+
+            /* services.AddSingleton<ICategoryService, CategoryManager>();
+             services.AddSingleton<ICategoryDal, EfCategoryDal>();
+
+             services.AddSingleton<IAdminService, AdminManager>();
+             services.AddSingleton<IAdminDal, EfAdminDal>();
+
+             services.AddSingleton<IBidService, BidManager>();
+             services.AddSingleton<IBidDal, EfBidDal>();
+
+             services.AddSingleton<IClientService, ClientManager>();
+             services.AddSingleton<IClientDal, EfClientDal>();
+
+             services.AddSingleton<IImageService, ImageManager>();
+             services.AddSingleton<IImageDal, EfImageDal>();
+
+             services.AddSingleton<ITenderService, TenderManager>();
+             services.AddSingleton<ITenderDal, EfTenderDal>();
+
+             services.AddSingleton<IUserService, UserManager>();
+             services.AddSingleton<IUserDal, EfUserDal>();*/
+             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+             services.AddCors();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,6 +64,11 @@ namespace WebAPI
             {
                 app.UseDeveloperExceptionPage();
             }
+          
+           
+
+            app.UseAuthorization();
+
 
             app.UseHttpsRedirection();
 
