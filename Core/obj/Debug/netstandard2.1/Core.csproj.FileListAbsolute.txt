@@ -7,3 +7,4 @@
 /Users/halimekaya/Projects/TenderProject/Core/obj/Debug/netstandard2.1/Core.csproj.CoreCompileInputs.cache
 /Users/halimekaya/Projects/TenderProject/Core/obj/Debug/netstandard2.1/Core.dll
 /Users/halimekaya/Projects/TenderProject/Core/obj/Debug/netstandard2.1/Core.pdb
+/Users/halimekaya/Projects/TenderProject/Core/obj/Debug/netstandard2.1/Core.csproj.AssemblyReference.cache

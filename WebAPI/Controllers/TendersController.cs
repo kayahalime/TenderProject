@@ -59,5 +59,35 @@ namespace WebAPI.Controllers
             }
             return BadRequest(result);
         }
+        [HttpGet("getbycategory")]
+        public IActionResult GetByCategory(int categoryId)
+        {
+            var result = _tenderService.GetTendersByCategoryId(categoryId);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+        [HttpGet("getbyfiltertender")]
+        public IActionResult GetByFilterTender(int categoryId)
+        {
+            var result = _tenderService.GetByFilter(categoryId);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+        [HttpGet("gettenderdetail")]
+        public IActionResult GetTenderDetails()
+        {
+            var result = _tenderService.GetTenderDetails();
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
     }
 }

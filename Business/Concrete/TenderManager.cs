@@ -5,6 +5,7 @@ using Business.Constants;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 
 namespace Business.Concrete
 {
@@ -44,5 +45,18 @@ namespace Business.Concrete
             _tenderDal.Update(tender);
             return new SuccessResult(Messages.Updated);
         }
+        public IDataResult<List<TenderDetailDto>> GetByFilter(int categoryId)
+        {
+            return new SuccessDataResult<List<TenderDetailDto>>(_tenderDal.GetByFilter(categoryId));
+        }
+        public IDataResult<List<Tender>> GetTendersByCategoryId(int categoryId)
+        {
+            return new SuccessDataResult<List<Tender>>(_tenderDal.GetAll(c => c.CategoryId== categoryId));
+        }
+        public IDataResult<List<TenderDetailDto>> GetTenderDetails()
+        {
+            return new SuccessDataResult<List<TenderDetailDto>>(_tenderDal.GetTenderDetails());
+        }
+
     }
 }
