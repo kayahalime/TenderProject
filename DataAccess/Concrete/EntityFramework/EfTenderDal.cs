@@ -22,11 +22,14 @@ namespace DataAccess.Concrete.EntityFramework
                              select new TenderDetailDto
                              {
                                  TenderId = t.TenderId,
+                                 
                                  CategoryName = c.CategoryName,
                                  Price = t.Price,
                                  Active = t.Active,
                                  StartingDate = t.StartingDate,
                                  EndDate = t.EndDate,
+                                 Job = t.Job,
+                                 Corparation = t.Corparation
                              };
                 return result.ToList();
 
@@ -43,12 +46,15 @@ namespace DataAccess.Concrete.EntityFramework
                              select new TenderDetailDto
                              {
                                  TenderId = t.TenderId,
+                                 
                                  CategoryName = c.CategoryName,
                                  Price = t.Price,
                                  Active = t.Active,
                                  StartingDate = t.StartingDate,
                                  EndDate = t.EndDate,
-                                 
+                                 Job = t.Job,
+                                 Corparation = t.Corparation
+
                              };
                 return result.ToList();
 

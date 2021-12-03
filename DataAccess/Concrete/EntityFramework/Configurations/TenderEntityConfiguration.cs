@@ -31,6 +31,15 @@ namespace DataAccess.Concrete.EntityFramework.Configurations
 
             builder.Property(t => t.Active).IsRequired();
 
+            builder.Property(t => t.Job)
+                .HasMaxLength(255)
+                .IsRequired();
+
+            builder.Property(t => t.Corparation)
+                .HasMaxLength(255)
+                .IsRequired();
+
+
 
         }
     }

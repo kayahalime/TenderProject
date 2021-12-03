@@ -13,7 +13,8 @@ namespace Entities.Concrete
         public DateTime StartingDate { get; set; }
         public DateTime EndDate { get; set; }
         public int ClientId { get; set; }
-
+        public string Job { get; set; }
+        public string Corparation { get; set; }
 
     }
 }

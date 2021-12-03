@@ -4,7 +4,26 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="TenderProject" expanded="True" />
+          <Node name="TenderProject" expanded="True">
+            <Node name="Business" expanded="True">
+              <Node name="Abstract" expanded="True">
+                <Node name="ITenderService.cs" selected="True" />
+              </Node>
+              <Node name="Concrete" expanded="True" />
+            </Node>
+            <Node name="DataAccess" expanded="True">
+              <Node name="Abstract" expanded="True" />
+              <Node name="Concrete" expanded="True">
+                <Node name="EntityFramework" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Entities" expanded="True">
+              <Node name="DTOs" expanded="True" />
+            </Node>
+            <Node name="WebAPI" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
