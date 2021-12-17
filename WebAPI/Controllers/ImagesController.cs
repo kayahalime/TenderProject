@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Business.Abstract;
 using Entities.Concrete;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,12 +15,17 @@ namespace WebAPI.Controllers
     [ApiController]
     public class ImagesController : ControllerBase
     {
+
         IImageService _imageService;
-        public ImagesController(IImageService imageService)
+
+        IWebHostEnvironment _webHostEnvironment;
+
+        public ImagesController(IImageService imageService, IWebHostEnvironment webHostEnvironment)
         {
             _imageService = imageService;
-
+            _webHostEnvironment = webHostEnvironment;
         }
+
         [HttpGet("getall")]
         public IActionResult GetAll()
         {
@@ -30,30 +36,59 @@ namespace WebAPI.Controllers
             }
             return BadRequest(result);
         }
+
         [HttpGet("getbyid")]
         public IActionResult GetById(int id)
         {
-            var result = _imageService.GetById(id);
+            var result = _imageService.Get(id);
             if (result.Success)
             {
                 return Ok(result);
             }
             return BadRequest(result);
         }
+
+        [HttpGet("getimagesbytenderid")]
+        public IActionResult GetImagesById(int id)
+        {
+            var result = _imageService.GetImagesByTenderId(id);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+
         [HttpPost("add")]
-        public IActionResult Add(Image image)
+        public IActionResult AddAsync([FromForm(Name = ("Image"))] IFormFile file, [FromForm] Image image)
         {
-            var result = _imageService.Add(image);
+
+
+            var result = _imageService.Add(file, image);
+
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+
+            return BadRequest(result);
+        }
+
+        [HttpPost("delete")]
+        public IActionResult Delete(Image carImage)
+        {
+            var result = _imageService.Delete(carImage);
             if (result.Success)
             {
                 return Ok(result);
             }
             return BadRequest(result);
         }
+
         [HttpPost("update")]
-        public IActionResult Update(Image image)
+        public IActionResult Update([FromForm(Name = ("Image"))] IFormFile file, [FromForm] Image image)
         {
-            var result = _imageService.Update(image);
+            var result = _imageService.Update(file, image);
             if (result.Success)
             {
                 return Ok(result);

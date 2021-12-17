@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using Core.Utilities.Results;
 using Entities.Concrete;
+using Microsoft.AspNetCore.Http;
 
 namespace Business.Abstract
 {
     public interface IImageService
     {
-        IResult Add(Image image);
-        IResult Update(Image image);
-        IResult Delete(Image image);
-
-        IDataResult<Image> GetById(int imageId);
         IDataResult<List<Image>> GetAll();
+        IDataResult<Image> Get(int id);
+        IResult Add(IFormFile file, Image image);
+        IResult Update(IFormFile file, Image image);
+        IResult Delete(Image image);
+        IDataResult<List<Image>> GetImagesByTenderId(int id);
     }
 }

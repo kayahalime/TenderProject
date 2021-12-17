@@ -41,6 +41,7 @@
     <None Remove="Aspects\Autofac\Caching\" />
     <None Remove="Aspects\Autofac\Transaction\" />
     <None Remove="Aspects\Autofac\Performance\" />
+    <None Remove="Utilities\FileHelper\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataAccess\" />
@@ -68,6 +69,7 @@
     <Folder Include="Aspects\Autofac\Caching\" />
     <Folder Include="Aspects\Autofac\Transaction\" />
     <Folder Include="Aspects\Autofac\Performance\" />
+    <Folder Include="Utilities\FileHelper\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.11" />

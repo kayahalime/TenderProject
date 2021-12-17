@@ -59,6 +59,17 @@ namespace WebAPI.Controllers
             }
             return BadRequest(result);
         }
+
+        [HttpPost("delete")]
+        public IActionResult Delete(Tender tender)
+        {
+            var result = _tenderService.Delete(tender);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
         [HttpGet("getbycategory")]
         public IActionResult GetByCategory(int categoryId)
         {

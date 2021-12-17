@@ -1,24 +1,20 @@
 ﻿<Properties StartupConfiguration="{586A99AB-EFF6-474E-9D93-AB81BA362275}|Default">
   <MonoDevelop.Ide.ItemProperties.WebAPI PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Core/Utilities/FileHelper/FileHelper.cs">
+    <Files>
+      <File FileName="Business/Concrete/ImageManager.cs" Line="38" Column="51" />
+      <File FileName="Core/Utilities/FileHelper/FileHelper.cs" Line="18" Column="49" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TenderProject" expanded="True">
-            <Node name="Business" expanded="True">
-              <Node name="Abstract" expanded="True">
-                <Node name="ITenderService.cs" selected="True" />
+            <Node name="Core" expanded="True">
+              <Node name="Utilities" expanded="True">
+                <Node name="FileHelper" expanded="True">
+                  <Node name="FileHelper.cs" selected="True" />
+                </Node>
               </Node>
-              <Node name="Concrete" expanded="True" />
-            </Node>
-            <Node name="DataAccess" expanded="True">
-              <Node name="Abstract" expanded="True" />
-              <Node name="Concrete" expanded="True">
-                <Node name="EntityFramework" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="Entities" expanded="True">
-              <Node name="DTOs" expanded="True" />
             </Node>
             <Node name="WebAPI" expanded="True">
               <Node name="Controllers" expanded="True" />
