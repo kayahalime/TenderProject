@@ -24,19 +24,25 @@ namespace Business.Concrete
         // [ValidationAspect(typeof(CarImageValidator))]
         public IResult Add(IFormFile file, Image image)
         {
-            var result = BusinessRules.Run(CheckTenderImageLimit(image));
+            var imageResult = FileHelper.Upload(file);
+            if (!imageResult.Success)
+            {
+                return new ErrorResult(imageResult.Message);
+            }
+
+            IResult result = BusinessRules.Run(CheckTenderImageLimit(image));
 
             if (result != null)
             {
                 return result;
             }
 
-            image.ImagePath = FileHelper.AddAsync(file);
+            image.ImagePath = imageResult.Message;
            
             _imageDal.Add(image);
-
             return new SuccessResult(Messages.Added);
         }
+
         //[ValidationAspect(typeof())]
         public IResult Delete(Image image)
         {
@@ -66,11 +72,22 @@ namespace Business.Concrete
         }
 
 
-      //  [ValidationAspect(typeof(ImageValidator))]
+        //  [ValidationAspect(typeof(ImageValidator))]
         public IResult Update(IFormFile file, Image image)
         {
-            image.ImagePath = FileHelper.UpdateAsync(_imageDal.Get(p => p.ImageId == image.ImageId).ImagePath, file);
-         
+            var isImage = _imageDal.Get(c => c.ImageId == image.ImageId);
+            if (isImage == null)
+            {
+                return new ErrorResult(Messages.Error);
+            }
+
+            var updatedFile = FileHelper.Update(file, isImage.ImagePath);
+            if (!updatedFile.Success)
+            {
+                return new ErrorResult(updatedFile.Message);
+            }
+             image.ImagePath = updatedFile.Message;
+            
             _imageDal.Update(image);
             return new SuccessResult(Messages.Updated);
         }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Business.Abstract;
 using Business.Constants;
 using Core.Entities.Concrete;
+using Core.Utilities.Business;
 using Core.Utilities.Results;
 using Core.Utilities.Security.Hashing;
 using DataAccess.Abstract;
@@ -12,10 +13,13 @@ namespace Business.Concrete
     public class UserManager : IUserService
     {
         IUserDal _userDal;
-
-        public UserManager(IUserDal userDal)
+        IAdminService _adminService;
+        IClientService _clientService;
+        public UserManager(IUserDal userDal, IAdminService adminService, IClientService clientService)
         {
             _userDal = userDal;
+            _adminService = adminService;
+            _clientService = clientService;
         }
 
         public IDataResult<List<OperationClaim>> GetClaims(User user)
@@ -26,6 +30,7 @@ namespace Business.Concrete
         public IResult Add(User user)
         {
             _userDal.Add(user);
+           
             return new SuccessResult();
         }
 
@@ -89,5 +94,6 @@ namespace Business.Concrete
         {
             return new SuccessDataResult<User>(_userDal.Get(u => u.Email == email));
         }
+        
     }
 }

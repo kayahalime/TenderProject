@@ -14,6 +14,6 @@ namespace Entities.DTOs
         public string Job { get; set; }
         public string Corparation { get; set; }
 
-
+        public string ImagePath { get; set; }
     }
 }

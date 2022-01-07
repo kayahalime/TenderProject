@@ -17,5 +17,8 @@ namespace Business.Constants
         public static string UserUpdated = "Kullanıcı Güncellendi";
         public static string UserListed = "Kullanıcı Listelendi";
         public static string MaintenanceTime = "Sistem Bakımda";
+        public static string Error = "Başarısız";
+
+
     }
 }

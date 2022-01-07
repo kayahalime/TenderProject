@@ -2,6 +2,7 @@
 using Business.Abstract;
 using Business.Constants;
 using Core.Entities.Concrete;
+using Core.Utilities.Business;
 using Core.Utilities.Results;
 using Core.Utilities.Security.Hashing;
 using Core.Utilities.Security.JWT;
@@ -17,15 +18,20 @@ namespace Business.Concrete
     {
         private IUserService _userService;
         private ITokenHelper _tokenHelper;
+        IAdminService _adminService;
+        IClientService _clientService;
 
-        public AuthManager(IUserService userService, ITokenHelper tokenHelper)
+        public AuthManager(IUserService userService, ITokenHelper tokenHelper, IAdminService adminService, IClientService clientService)
         {
             _userService = userService;
             _tokenHelper = tokenHelper;
+            _adminService = adminService;
+            _clientService = clientService;
         }
 
         public IDataResult<User> Register(UserForRegisterDto userForRegisterDto, string password)
         {
+            
             byte[] passwordHash, passwordSalt;
             HashingHelper.CreatePasswordHash(password, out passwordHash, out passwordSalt);
             var user = new User
@@ -33,6 +39,7 @@ namespace Business.Concrete
                 Email = userForRegisterDto.Email,
                 FirstName = userForRegisterDto.FirstName,
                 LastName = userForRegisterDto.LastName,
+                Code=userForRegisterDto.Code,
                 PasswordHash = passwordHash,
                 PasswordSalt = passwordSalt,
                
@@ -72,5 +79,6 @@ namespace Business.Concrete
             var accessToken = _tokenHelper.CreateToken(user, claims);
             return new SuccessDataResult<AccessToken>(accessToken, Messages.TokenCreated);
         }
+       
     }
 }

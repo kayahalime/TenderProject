@@ -18,11 +18,12 @@ namespace DataAccess.Concrete.EntityFramework
                 var result = from t in context.tenders
                              join c in context.categories
                              on t.CategoryId equals c.CategoryId
-                           
+                             join i in context.images on t.TenderId equals i.TenderId
+
                              select new TenderDetailDto
                              {
                                  TenderId = t.TenderId,
-                                 
+                                 ImagePath = i.ImagePath,
                                  CategoryName = c.CategoryName,
                                  Price = t.Price,
                                  Active = t.Active,
@@ -42,13 +43,14 @@ namespace DataAccess.Concrete.EntityFramework
                 var result = from t in context.tenders
                              join c in context.categories
                              on t.CategoryId equals c.CategoryId
-                            
+                             join i in context.images on t.TenderId equals i.TenderId
                              select new TenderDetailDto
                              {
                                  TenderId = t.TenderId,
                                  
                                  CategoryName = c.CategoryName,
                                  Price = t.Price,
+                                 ImagePath = i.ImagePath,
                                  Active = t.Active,
                                  StartingDate = t.StartingDate,
                                  EndDate = t.EndDate,
